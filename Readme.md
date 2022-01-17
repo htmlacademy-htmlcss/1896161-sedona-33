@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Корнев](https://up.htmlacademy.ru/htmlcss/33/user/1896161).
-* Наставник: `Неизвестно`.
+* Наставник: `Олег Цыганов(https://htmlacademy.ru/profile/olegtsyganov)`.
 
 ---
 
