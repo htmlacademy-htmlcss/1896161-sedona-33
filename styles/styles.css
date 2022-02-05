@@ -14,24 +14,64 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html
+{
+  height: 100%;
+}
  body
  {
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
    background-color: #fff;
    color: #242424;
    font-family: "PT Sans", sans-serif;
    font-size: 18px;
    line-height: 21px;
  }
-.main-header a
+ .navigation
+ {
+   display: flex;
+   width: 1060px;
+   margin: 0 auto;
+ }
+.navigation-list
+{
+  width: 450px;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+}
+.navigation-user-container
+{
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+.navigation-link
 {
   color: #000;
   text-decoration: none;
   text-align: center;
 }
+.navigation-user-link
+{
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+.page-container
+{
+  width: 1200px;
+  margin: 0 auto;
+}
 .button
 {
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #fff;
 }
 .button-brown
@@ -39,7 +79,7 @@
   background-color: #756257;
 
 }
-a.button-brown
+.button-brown
 {
   color: #fff;
 }
@@ -55,6 +95,12 @@ a.button-brown
 .button-green
 {
   background-color: #7DB54F;
+}
+.button-load-more
+{
+  display: block;
+  width: 620px;
+  margin: 0 auto;
 }
 .slogan
 {
@@ -81,6 +127,25 @@ a.button-brown
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+}
+.advanteges-list
+{
+  margin: 0;
+  padding: 0;
+
+}
+.advanteges-container
+{
+  display: flex;
+  width: 1200px;
+}
+.advanteges-container-town
+{
+  flex-direction: row-reverse;
+}
+.advanteges-item
+{
+  width: 400px;
 }
 .advanteges-description
 {
@@ -160,15 +225,35 @@ a.button-brown
   font-size: 22px;
   line-height: 26px;
 }
+.main-footer-container
+{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+.footer-contacts-list
+{
+  width: 107px;
+  margin-left: 72px;
+}
 .footer-phone
 {
   color: #000;
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
+  margin-left:  240px;
+  margin-right: 240px;
+}
+.footer-contacts-logo
+{
+  margin-right: 72px;
 }
 .catalog-header
 {
   background: #83B3D3 url("../images/catalog-background.jpg") no-repeat;
+  background-size: cover;
   color: #fff;
   margin: 0 auto;
 }
@@ -181,6 +266,12 @@ a.button-brown
 .breadcrumbs
 {
   font-size: 16px;
+}
+.products-filters-container
+{
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
 }
 .products-filters-title
 {
@@ -198,6 +289,20 @@ a.button-brown
 
   line-height: 23px;
   color: #333;
+  margin-right: 81px;
+}
+.select-container
+{
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+}
+.suitable-hotels-container
+{
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 .suitable-hotels-description
 {
@@ -205,11 +310,12 @@ a.button-brown
   font-size: 30px;
   line-height: 39px;
   color: #000;
+  order: -1;
+  margin-right: auto;
 }
 .suitable-hotels-item
 {
-  width: 339px;
-  height: 438px;
+  width: 340px;
 }
 .suitable-hotels-link
 {
@@ -244,10 +350,27 @@ a.button-brown
 {
   line-height: 23px;
 }
+.page-view-container
+{
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+}
+.pagination-container
+{
+  display: flex;
+  width: 355px;
+  justify-content: space-between;
+  margin-right: 302px;
+}
 .email-subscribe-catalog
 {
   width: 800px;
   height: 241px;
   text-align: center;
   margin: 0 auto;
+}
+.main-container
+{
+  flex-grow: 1;
 }
