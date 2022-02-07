@@ -30,6 +30,26 @@ html
    font-size: 18px;
    line-height: 21px;
  }
+ .visually-hidden 
+ {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ .header-navigation-logo
+ {
+   display: block;
+   margin: 0;
+   padding: 0;
+   margin-right: 30px;
+ }
  .navigation
  {
    display: flex;
@@ -38,29 +58,59 @@ html
  }
 .navigation-list
 {
-  width: 450px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 470px;
   margin: 0;
-  margin-left: 30px;
   padding: 0;
+  list-style-type: none;
+}
+.navigation-user-list
+{
+  display: flex; 
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .navigation-user-container
 {
+  display: flex;
   width: 300px;
   margin: 0;
   padding: 0;
   margin-left: auto;
 }
+.want-here-button
+{
+  align-self: center;
+  margin-left: 20px;
+}
 .navigation-link
 {
+  display: block;
   color: #000;
   text-decoration: none;
   text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  padding: 20px 17px;
 }
 .navigation-user-link
 {
+  display: block;
+  width: 42px;
   color: #000;
   text-decoration: none;
   text-align: center;
+  padding: 25px 13px;
+  /* границы и фоновый цвет лишь для удобства работы пока не подключу иконки */
+  border: 1px solid #000;
+  background-color: tomato;
 }
 .page-container
 {
@@ -73,6 +123,10 @@ html
   text-decoration: none;
   text-align: center;
   color: #fff;
+  /* тут я увеличил рабочую область всех кнопок для удобства, сделал это сразу для всех, тк стилизация кнопок будет позже
+  и я пока не буду написывать лишние классы, а скругление добавил просто для красоты пока что пусть будет, потом выставлю все как нужно */
+  padding: 9px 15px;
+  border-radius: 4px;
 }
 .button-brown
 {
@@ -110,7 +164,7 @@ html
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin: 0 auto;
+  margin: 63px auto 31px auto;
 }
 .slogan-description
 {
@@ -121,6 +175,7 @@ html
   line-height: 36px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 .advanteges-title
 {
@@ -132,6 +187,7 @@ html
 {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 
 }
 .advanteges-container
@@ -145,6 +201,8 @@ html
 }
 .advanteges-item
 {
+  display: flex;
+  flex-direction: column;
   width: 400px;
 }
 .advanteges-description
@@ -154,6 +212,14 @@ html
   text-align: center;
 
 }
+/* оставлю закоментированным чтоб вопрос задать на консультации
+.advanteges-text
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
 .advanteges-bg-blue
 {
   background-color: #83B3D3;
@@ -185,7 +251,8 @@ html
 }
 .hotel-search
 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .hotel-search-entry
 {
@@ -193,16 +260,18 @@ html
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  margin: 90px auto 30px auto;
 
 }
 .hotel-search-description
 {
+  width: 720px;
   font-size: 22px;
   line-height: 26px;
   width: 720px;
   height: 52px;
-  margin: 0 auto;
+  margin: 0 auto 56px auto;
+  text-align: center;
 }
 .email-subscribe
 {
@@ -211,17 +280,21 @@ html
   width: 1200px;
   height: 411px;
   text-align: center;
+  margin-top: 93px;
+  padding-top: 2px;
 }
 .email-subscribe-title
 {
+  margin: 92px auto 30px auto;
+  padding: 0;
   font-size: 30px;
- line-height: 36px;
+  line-height: 36px;
 }
 .email-subscribe-description
 {
   width: 720px;
   height: 52px;
-  margin: 0 auto;
+  margin: 0 auto 46px auto;
   font-size: 22px;
   line-height: 26px;
 }
@@ -230,17 +303,32 @@ html
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  align-items: center;
 
 }
 .footer-contacts-list
 {
-  width: 107px;
+  display: flex;
+  align-items: stretch;
+  width: 150px;
   margin-left: 72px;
+  list-style-type: none;
+}
+.footer-contacts-item
+{
+  width: 35px;
+}
+.footer-contacts-link
+{
+  /* границы и фоновый цвет лишь для удобства работы пока не подключу иконки */
+  border: 1px solid #000;
+  background-color: tomato;
+  padding: 15px;
 }
 .footer-phone
 {
   color: #000;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 40px;
   width: 720px;
   margin-left:  240px;
