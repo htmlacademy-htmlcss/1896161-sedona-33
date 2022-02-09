@@ -30,7 +30,7 @@ html
    font-size: 18px;
    line-height: 21px;
  }
- .visually-hidden 
+ .visually-hidden
  {
   position: absolute;
   width: 1px;
@@ -68,10 +68,11 @@ html
 }
 .navigation-user-list
 {
-  display: flex; 
+  display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   margin: 0;
+  margin-right: 20px;
   padding: 0;
   list-style-type: none;
 }
@@ -82,11 +83,7 @@ html
   margin: 0;
   padding: 0;
   margin-left: auto;
-}
-.want-here-button
-{
-  align-self: center;
-  margin-left: 20px;
+  align-items: center;
 }
 .navigation-link
 {
@@ -183,51 +180,42 @@ html
   line-height: 28px;
   text-align: center;
 }
-.advanteges-list
-{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-}
-.advanteges-container
-{
-  display: flex;
-  width: 1200px;
-}
-.advanteges-container-town
-{
-  flex-direction: row-reverse;
-}
-.advanteges-item
-{
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-}
-.advanteges-description
-{
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-
-}
-/* оставлю закоментированным чтоб вопрос задать на консультации
-.advanteges-text
-{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 .advanteges-bg-blue
 {
   background-color: #83B3D3;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 384px;
+  justify-content: center;
 }
 .advanteges-bg-light-blue
 {
   background-color: rgba(131, 179, 211, 0.12);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 384px;
+  justify-content: center;
+}
+.advanteges-bg-white
+{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 384px;
+  justify-content: center;
+}
+.advanteges-bg-medium-blue
+{
+  background: rgba(131, 179, 211, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 384px;
+  justify-content: center;
 }
 .advanteges-bg-light-blue .advanteges-title
 {
@@ -237,10 +225,6 @@ html
 {
   color: #333;
 }
-.advanteges-bg-white
-{
-  background-color: #fff;
-}
 .advanteges-bg-white .advanteges-title
 {
   color: #000;
@@ -248,6 +232,35 @@ html
 .advanteges-bg-white .advanteges-description
 {
   color: #333;
+}
+.advanteges-list
+{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.advanteges-item
+{
+  display: flex;
+}
+.advanteges-item:first-child
+{
+  flex-direction: row-reverse;
+}
+.advanteges-text
+{
+  width: 400px;
+  height: 384px;
+}
+.advanteges-description
+{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+
 }
 .hotel-search
 {
@@ -328,7 +341,7 @@ html
 .footer-phone
 {
   color: #000;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 40px;
   width: 720px;
   margin-left:  240px;
@@ -385,13 +398,7 @@ html
   width: 1056px;
   margin: 0 auto;
 }
-.suitable-hotels-container
-{
-  display: flex;
-  width: 1056px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
+
 .suitable-hotels-description
 {
   font-weight: 700;
@@ -442,14 +449,21 @@ html
 {
   display: flex;
   width: 1056px;
-  margin: 0 auto;
+  margin: 30px auto 73px auto;
 }
-.pagination-container
+.pagination-list
 {
   display: flex;
+  flex-direction: row;
   width: 355px;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   margin-right: 302px;
+  list-style-type: none;
+}
+.pagination-item:not(:last-child)
+{
+  margin-right: 8px;
 }
 .email-subscribe-catalog
 {
