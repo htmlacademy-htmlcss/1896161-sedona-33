@@ -446,6 +446,10 @@ body {
   list-style-type: none;
   margin: 56px 72px 72px 34px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  row-gap: 10px;
+  column-gap: 18px;
 }
 
 .suitable-hotels-img {
@@ -485,8 +489,8 @@ body {
   line-height: 23px;
   color: #333;
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
+  grid-column: 1 / 2;
 }
 
 .suitable-hotels-price {
@@ -494,39 +498,46 @@ body {
   line-height: 23px;
   color: #333;
   margin: 0;
-  margin-bottom: 16px;
-  margin-left: 25px;
   padding: 0;
   width: 142px;
+  grid-column: 3 / 4;
 }
 
 .suitable-hotels-rating-text {
-  width: 160px;
-  height: 37px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  margin-left: auto;
+  margin: 0;
   background-color: #F2F2F2;
   border-radius: 4px;
   padding-top: 9px;
   padding-bottom: 10px;
+  grid-column: 2/4;
 }
 
 .suitable-hotels-rating-stars {
   height: 17px;
-  margin-top: 26px;
+  grid-column: 1/2;
 }
 
 .hotel-info-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  row-gap: 16px;
+  grid-template-columns: 133px 26px 141px;
 }
 
 .hotel-info-container .button-brown {
-  margin-right: 26px;
+  grid-column: 1/2;
+}
+
+.hotel-info-container .button-blue {
+  grid-column: 3/4;
+}
+
+.hotel-info-container .button-green {
+  grid-column: 3/4;
 }
 
 .select-hotels-per-page-descroption {
