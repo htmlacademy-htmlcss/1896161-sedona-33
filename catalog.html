@@ -10,8 +10,8 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation-link" href="index.html"><img class="header-navigation-logo" src="images/logo-sedona.svg"
-          alt="Логотип Седоны"></a>
+      <a class="header-navigation-logo" href="index.html"><img class="header-navigation-logo"
+          src="images/logo-sedona.svg" alt="Логотип Седоны"></a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
@@ -97,7 +97,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-blue" type="submit">Применить</button>
+            <div class="products-filters-buttons-container">
+              <button class="button button-blue" type="submit">Применить</button>
+              <button class="button button-reset" type="#">Сбросить</button>
+            </div>
           </div>
         </form>
       </section>
@@ -121,83 +124,85 @@
           <p class="suitable-hotels-description">Найдено гостиниц: 38</p>
         </div>
         <ul class="suitable-hotels-list">
-            <li class="suitable-hotels-item">
-              <a class="suitable-hotels-link" href="#">
-                <img class="suitable-hotels-img" src="images/hotel-amara.jpg" alt="">
-                <h3 class="suitable-hotels-name">Amara Resort & Spa</h3>
-              </a>
-              <p class="suitable-hotels-type">Гостинница</p>
-              <p class="suitable-hotels-price">От 4000р</p>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-              <img class="suitable-hotels-rating-stars" src="images/4-stars.svg" alt="4 звезды">
-              <p class="suitable-hotels-rating-text">Рейтинг: 8,5</p>
-            </li>
-            <li class="suitable-hotels-item">
-              <a class="suitable-hotels-link" href="#">
-                <img class="suitable-hotels-img" src="images/hotel-desert.jpg" alt="">
-                <h3 class="suitable-hotels-name">Desert Quail Inn</h3>
-              </a>
-              <p class="suitable-hotels-type">Гостинница</p>
-              <p class="suitable-hotels-price">От 3000р</p>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-              <img class="suitable-hotels-rating-stars" src="images/3-stars.svg" alt="3 звезды">
-              <p class="suitable-hotels-rating-text">Рейтинг: 8,9</p>
-            </li>
-            <li class="suitable-hotels-item">
-              <a class="suitable-hotels-link" href="#">
-                <img class="suitable-hotels-img" src="images/hotel-villas.jpg" alt="">
-                <h3 class="suitable-hotels-name">Villas at Poco Diablo</h3>
-              </a>
-              <p class="suitable-hotels-type">Гостинница</p>
-              <p class="suitable-hotels-price">От 2000р</p>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-green" href="#">В избранном</a>
-              <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды">
-              <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
-            </li>
-            <li class="suitable-hotels-item">
-              <a class="suitable-hotels-link" href="#">
-                <img class="suitable-hotels-img" src="images/hotel-greentree.jpg" alt="">
-                <h3 class="suitable-hotels-name">GreenTree Inn</h3>
-              </a>
-              <p class="suitable-hotels-type">Гостинница</p>
-              <p class="suitable-hotels-price">От 3000р</p>
-              <a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-              <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды">
-              <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
-            </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-amara.jpg" alt="">
+              <h3 class="suitable-hotels-name">Amara Resort & Spa</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостинница</p>
+            <p class="suitable-hotels-price">От 4000р</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/4-stars.svg" alt="4 звезды">
+            <p class="suitable-hotels-rating-text">Рейтинг: 8,5</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-desert.jpg" alt="">
+              <h3 class="suitable-hotels-name">Desert Quail Inn</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостинница</p>
+            <p class="suitable-hotels-price">От 3000р</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/3-stars.svg" alt="3 звезды">
+            <p class="suitable-hotels-rating-text">Рейтинг: 8,9</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-villas.jpg" alt="">
+              <h3 class="suitable-hotels-name">Villas at Poco Diablo</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостинница</p>
+            <p class="suitable-hotels-price">От 2000р</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-green" href="#">В избранном</a>
+            <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды">
+            <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
+          </li>
+          <li class="suitable-hotels-item">
+            <a class="suitable-hotels-link" href="#">
+              <img class="suitable-hotels-img" src="images/hotel-greentree.jpg" alt="">
+              <h3 class="suitable-hotels-name">GreenTree Inn</h3>
+            </a>
+            <p class="suitable-hotels-type">Гостинница</p>
+            <p class="suitable-hotels-price">От 3000р</p>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+            <img class="suitable-hotels-rating-stars" src="images/2-stars.svg" alt="2 звезды">
+            <p class="suitable-hotels-rating-text">Рейтинг: 9,2</p>
+          </li>
         </ul>
         <a class="button button-blue button-load-more" href="#">Загрузить ещё</a>
         <div class="page-view-container">
           <ol class="pagination-list">
-              <li class="pagination-item">
-                <a class="button button-white pagination-link pagination-link-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button button-blue pagination-link" href="#">10</a>
-              </li>
+            <li class="pagination-item">
+              <a class="button button-white pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link" href="#">10</a>
+            </li>
           </ol>
-          <span class="select-hotels-per-page-description">Гостиниц на странице: </span>
-          <select class="select-hotels-per-page">
-            <option value="4">4</option>
-            <option value="8">8</option>
-            <option value="16">16</option>
-          </select>
+          <div class="select-hotels-per-page-container">
+            <span class="select-hotels-per-page-description">Гостиниц на странице: </span>
+            <select class="select-hotels-per-page">
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
+            </select>
+          </div>
         </div>
       </section>
       <section class="email-subscribe-catalog">
