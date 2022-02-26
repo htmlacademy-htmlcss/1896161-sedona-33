@@ -23,8 +23,8 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
+  margin: 0;
   flex-direction: column;
   min-height: 100%;
   background-color: #fff;
@@ -51,25 +51,31 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  margin-right: 30px;
-  position: relative;
+  top: 0;
+  left: 0;
+  position: absolute;
   z-index: 2;
+}
+
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 70px;
 }
 
 .navigation {
   display: flex;
-  width: 1060px;
-  height: 62px;
-  margin: 0 auto;
+  min-height: 62px;
   align-items: center;
+  position: relative;
 }
 
 .navigation-list {
   display: flex;
-  /* align-items: flex-start; */
   flex-wrap: wrap;
-  width: 470px;
+  max-width: 470px;
   margin: 0;
+  margin-left: 186px;
   padding: 0;
   list-style-type: none;
 }
@@ -86,7 +92,7 @@ body {
 .navigation-user-container {
   display: flex;
   justify-content: flex-end;
-  width: 400px;
+  max-width: 400px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -102,8 +108,11 @@ body {
   font-size: 20px;
   line-height: 26px;
   margin: 0;
-  padding: 20px 17px 18px 17px;
-  /* width: max-content; */
+  padding: 17px 0;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 34px;
 }
 
 .navigation-link:hover {
@@ -122,21 +131,36 @@ body {
   content: "";
   position: absolute;
   height: 2px;
-  width: inherit;
-  bottom: 0;
-  left: auto;
-  right: auto;
+  width: 100%;
+  bottom: -1px;
+  transform: translateY(50%);
+  left: 0;
   background-color: #756257;
   z-index: 3;
 }
 
 .navigation-user-link {
-  display: block;
-  color: #000;
+  display: flex;
   text-decoration: none;
-  text-align: center;
-  padding: 24px 10px;
   position: relative
+}
+
+.favorite::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "12";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #7DB54F;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  position: absolute;
+  top: -11px;
+  right: -13px;
 }
 
 .navigation-user-item:not(:last-child) {
@@ -144,12 +168,6 @@ body {
 }
 
 .navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #000
 }
 
@@ -188,7 +206,7 @@ body {
 
 .button-brown:focus {
   background-color: #615048;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .button-brown:hover {
@@ -362,6 +380,10 @@ body {
   color: #333;
 }
 
+.advantages-bg-blue .advantages-description {
+  max-width: 220px;
+}
+
 .advantages-list {
   list-style-type: none;
   display: flex;
@@ -484,7 +506,7 @@ body {
 
 .footer-contacts-list {
   display: flex;
-  width: 200px;
+  max-width: 200px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -872,6 +894,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .message-404 {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -881,6 +904,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
 .image-404 {
   display: block;
   width: 600px;
