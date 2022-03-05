@@ -156,7 +156,7 @@
           Только полезная информация и никакого спама,
           честное бойскаутское!</p>
         <form class="email-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input class="email-input" type="email" name="email" placeholder="Ваш e-mail">
           <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
@@ -213,6 +213,55 @@
       </div>
     </section>
   </footer>
+
+  <div class="modal-container modal-close">
+    <section class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button"></button>
+      </div>
+      <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="arrival-date">
+          <span class="input-description">Дата заезда:</span>
+          <div class="arrival-date-input-container">
+            <input class="modal-input arrival-date-input" type="text" name="arrival-date" value="27 апреля 2020">
+            <p class="form-error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+        </label>
+        <label class="departure-date">
+          <span class="input-description">Дата выезда:</span>
+          <div class="departure-date-input-container">
+            <input class="modal-input departure-date-input" type="text" name="departure-date" value="1 сентября 2021">
+            <p class="form-confirmation">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </label>
+        <div class="count-of-peoples">
+          <label class="count-of-adults">
+            <span class="input-description">Взрослые:</span>
+            <div class="count-of-adults-input-container">
+              <button class="button-minus" type="button"></button>
+              <input class="modal-input count-of-adults-input" type="number" name="count-of-adults" value="2">
+              <button class="button-plus" type="button"></button>
+            </div>
+          </label>
+          <label class="count-of-kids">
+            <div class="count-of-kids-description">
+              <span class="input-description">Дети:</span>
+              <span class="kids-info"></span>
+              <span class="kids-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</span>
+            </div>
+            <div class="count-of-kids-input-container">
+              <button class="button-minus" type="button"></button>
+              <input class="modal-input count-of-kids-input" type="number" name="count-of-kids" value="1">
+              <button class="button-plus" type="button"></button>
+            </div>
+          </label>
+        </div>
+        <button class="button button-blue" type="submit">Найти</button>
+      </form>
+    </section>
+  </div>
 </body>
 
 </html>
