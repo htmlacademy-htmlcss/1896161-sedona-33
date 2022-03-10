@@ -32,6 +32,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -61,6 +62,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 70px;
+  background: #fff;
 }
 
 .navigation {
@@ -148,7 +150,7 @@ body {
   text-decoration: none;
   position: relative;
   margin-top: 5px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .favorite::after {
@@ -188,6 +190,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .button {
@@ -278,7 +281,7 @@ body {
 
 .button-reset {
   background-color: transparent;
-  margin-top: 20px;
+  margin-top: 5px;
   text-transform: none;
   font-weight: 400;
   font-size: 18px;
@@ -343,6 +346,10 @@ body {
   padding: 20px 0;
 }
 
+.advantages-with-img .advantages-title {
+  padding-top: 12px;
+}
+
 .advantages-bg-light-blue {
   background-color: rgba(131, 179, 211, 0.12);
   display: flex;
@@ -404,6 +411,7 @@ body {
 .advantages-item {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .advantages-wrapper {
@@ -419,8 +427,24 @@ body {
   padding: 0;
 }
 
+.advantages-with-ico {
+  padding-top: 116px;
+}
+
+.advantages-with-ico .advantages-description {
+  margin-top: 20px;
+}
+
+.advantages-only-text .advantages-title {
+  margin-top: -10px;
+}
+
 .advantages-house:before {
   content: "";
+  position: absolute;
+  top: 89px;
+  left: 50%;
+  transform: translateX(-50%);
   background: url(../images/house.svg) no-repeat;
   width: 75px;
   height: 72px;
@@ -430,6 +454,10 @@ body {
 
 .advantages-food:before {
   content: "";
+  position: absolute;
+  top: 91px;
+  left: 50%;
+  transform: translateX(-50%);
   background: url(../images/food.svg) no-repeat;
   width: 74px;
   height: 70px;
@@ -439,6 +467,10 @@ body {
 
 .advantages-souvenirs:before {
   content: "";
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
   background: url(../images/gift.svg) no-repeat;
   width: 64px;
   height: 76px;
@@ -550,6 +582,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 22px 50px 22px 72px;
+  background-color: #fff;
 }
 
 .footer-contacts-list {
@@ -661,7 +694,7 @@ body {
   background-size: cover;
   color: #fff;
   margin: 0 auto;
-  padding: 35px 72px 62px 71px;
+  padding: 35px 72px 70px 71px;
 }
 
 .user-action-title {
@@ -749,7 +782,6 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  padding-left: 15px;
 }
 
 .products-filters-group:not(:last-of-type) {
@@ -757,9 +789,8 @@ body {
 }
 
 .products-filters-group:nth-child(3) {
-  margin-left: auto;
-  margin-bottom: 11px;
-  padding-left: 15px;
+  margin-left: 85px;
+  padding-left: 16px;
 }
 
 .products-filters-list {
@@ -777,13 +808,15 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
 }
 
 .products-filters-control {
   display: block;
   position: relative;
-  padding-left: 39px;
+  padding-left: 40px;
 }
 
 .control-checkbox {
@@ -824,7 +857,7 @@ body {
 
 .control-radio {
   position: absolute;
-  left: -2px;
+  left: 2px;
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -856,8 +889,10 @@ body {
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   color: #fff;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
+  font-weight: 400;
 }
 
 .price-input-min {
@@ -916,7 +951,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 17px;
   height: 23px;
   position: absolute;
-  right: 0;
+  right: -8px;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   margin-right: 14px;
@@ -939,7 +974,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 4px;
   width: 287px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 32px;
+  margin-top: 28px;
   position: relative
 }
 
@@ -967,7 +1002,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .toggle-max {
-  right: 60px;
+  right: 50px;
   bottom: 50%;
   transform: translateY(50%);
 }
@@ -983,12 +1018,12 @@ input[type=number]::-webkit-outer-spin-button {
 .products-filters-buttons-container {
   display: flex;
   flex-direction: column;
-  margin-left: 81px;
+  margin-left: 80px;
   margin-top: 60px;
 }
 
 .products-filters-buttons-container .button {
-  padding: 14px 29px;
+  padding: 14px 35px;
 }
 
 .select {
@@ -1029,20 +1064,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 .select-container {
   display: flex;
-  padding: 35px 72px 0 71px;
+  padding: 43px 72px 0 71px;
   margin: 0 auto;
 }
 
 .page-view-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
   align-items: center;
+  column-gap: 8px;
+  row-gap: 35px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.page-view-item {
-  margin-right: 5px;
 }
 
 .page-view-link {
@@ -1076,6 +1110,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .page-view-current {
   border: 2px solid #000;
+  padding-top: 10px;
 }
 
 .page-view-current:focus,
@@ -1255,10 +1290,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .email-subscribe-catalog {
-  padding-bottom: 100px;
+  padding-bottom: 141px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 41px;
+
 }
 
 .email-subscribe-title-catalog {
@@ -1267,6 +1302,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .main-container {
   flex-grow: 1;
+}
+
+.body-404 {
+  background-color: #fff;
 }
 
 .main-info {
@@ -1321,13 +1360,13 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 62px;
   background: #fff;
   color: #000;
+  border-radius: 30px;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
 }
 
 .modal-title {
@@ -1365,14 +1404,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hotel-search-form {
   display: grid;
-  row-gap: 40px;
+  row-gap: 11px;
+  padding-top: 53px;
 }
 
 .arrival-date,
 .departure-date {
   grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 420px;
 }
 
 .count-of-peoples {
@@ -1387,19 +1427,25 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hotel-search-form .button {
   grid-column: 1 / -1;
+  margin-top: 29px;
 }
 
 .input-description {
+  grid-column: 1/2;
   line-height: 40px;
   font-weight: 700;
+  padding-top: 3px;
 }
 
 .form-error,
 .form-confirmation {
+  grid-column: 2/-1;
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 40px;
+  margin-top: -9px;
 }
 
 .form-error {
@@ -1412,12 +1458,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .arrival-date-input,
 .departure-date-input {
+  grid-column: 2/-1;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
   color: #000;
-  padding: 3px 40px 3px 19px;
+  padding: 5px 40px 5px 19px;
   min-width: 420px;
   background-color: #F2F2F2;
   background-image: url("../images/modal-calendar.svg");
@@ -1427,26 +1474,19 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-.count-of-adults {
-  display: flex;
+.count-of-adults-container {
+  display: grid;
   min-width: 288px;
-  justify-content: space-between;
-  align-items: center;
+  grid-template-columns: 1fr 50px 33px 50px;
 }
 
-.count-of-kids {
-  display: flex;
-  align-items: center;
+
+.count-of-kids-container {
+  display: grid;
+  min-width: 230px;
+  grid-template-columns: 1fr 50px 33px 50px;
   margin-left: 56px;
-}
-
-.count-of-adults-input-container,
-.count-of-kids-input-container {
-  position: relative;
-}
-
-.count-of-kids-input-container {
-  margin-left: 53px;
+  position: relative
 }
 
 .count-of-adults-input,
@@ -1456,79 +1496,71 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
   line-height: 40px;
   background-color: #F2F2F2;
-  width: 133px;
-  padding: 3px 40px;
+  width: 33px;
+  padding: 5px 0;
   text-align: center;
   border: none;
-  border-radius: 4px;
 }
 
 .button-minus {
-  position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   border: none;
-  margin-left: 13px;
-  margin-top: 12px;
-  opacity: 0.3;
   cursor: pointer;
-  background: transparent;
+  background: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-minus::before {
-  position: absolute;
-  width: 13px;
-  height: 1px;
-  background-color: #000;
-  transform: translateX(-50%);
-  content: "";
+.minus,
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  opacity: 0.3;
+}
+
+.plus {
+  margin-top: 2px;
+  ;
 }
 
 .button-plus {
-  position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   padding: 0;
+  background: #f2f2f2;
   border: none;
-  margin-top: 12px;
-  right: 13px;
-  opacity: 0.3;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
-  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-plus::before {
-  position: absolute;
-  width: 13px;
-  height: 1px;
-  background-color: #000;
-  transform: translateX(-50%);
-  content: "";
+.button-plus:focus,
+.button-minus:focus {
+  outline: none;
 }
 
-.button-plus::after {
-  position: absolute;
-  width: 13px;
-  height: 1px;
-  background-color: #000;
-  transform: translateX(-50%) rotate(90deg);
-  content: "";
-}
-
-.button-plus:hover,
-.button-minus:hover {
+.button-plus:hover .plus,
+.button-minus:hover .minus {
   opacity: 1;
 }
 
-.button-plus:focus-visible,
-.button-minus:focus-visible {
+.button-plus:focus-visible .plus,
+.button-minus:focus-visible .minus {
   outline: 3px solid #83B3D3;
   opacity: 1;
 }
 
-.button-plus:active,
-.button-minus:active {
+.button-plus:active .plus,
+.button-minus:active .minus {
   opacity: 0.3;
 }
 
@@ -1551,9 +1583,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .kids-info {
   position: absolute;
-  right: -38px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 54px;
+  top: 9px;
   width: 25px;
   height: 25px;
   color: #fff;
@@ -1567,13 +1598,13 @@ input[type=number]::-webkit-outer-spin-button {
 .kids-tooltip {
   display: none;
   position: absolute;
-  top: 54px;
-  left: -59px;
+  top: 49px;
+  left: -60px;
   z-index: 2;
   width: 256px;
   color: #fff;
   background-color: #333;
-  padding: 15px 18px 18px 25px;
+  padding: 21px 18px 22px 22px;
   font-size: 16px;
   line-height: 20px;
   border-radius: 10px;
@@ -1602,4 +1633,5 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 10px 0;
   font-size: 20px;
   line-height: 40px;
+  border-radius: 10px;
 }
